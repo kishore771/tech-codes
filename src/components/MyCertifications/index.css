@@ -1,12 +1,67 @@
-.certification-container{
+.certifications-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("https://i.postimg.cc/3wzvJ1Z3/abstract-blue-background-geometric-shapes-3d-rendering-illustration-3d-illustration-abstract-background.jpg");
-    background-size: cover;
+    background-image: linear-gradient(135deg, #f0f8ff, #e6f7ff);
     background-position: center;
     height: 100vh;
     padding: 0 1rem;
 }
 
+.certifications-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.certification-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #ffffff;
+    align-items: center;
+    max-width: 50% fixed;
+    margin: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #f20909;
+    margin-bottom: 10px;
+}
+
+
+.card-details{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.header-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #efb906;
+    text-shadow: 1px 1px 0px #000000;
+    margin-bottom: 10px;
+}
+
+.card-link{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #093ff2;
+    text-decoration: none;
+    margin-bottom: 10px;
+}

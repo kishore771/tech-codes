@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../Header";
+import "./index.css";
+import Footer from "../Footer";
 
 const MyCertifications = () => {
     const certifications = [
@@ -28,18 +30,18 @@ const MyCertifications = () => {
         <div>
         <Header />
         <div className="certifications-container">
-        <h1>My Certifications</h1>
-        <p>Here are my certifications</p>
+        <h1 className="header-title">My Certifications</h1>
         <div className="certifications-list">
             {certifications.map((certification) => (
                 <div key={certification.id} className="certification-card">
                     <h3 className="card-title">{certification.name}</h3>
                     <p className="card-details">{certification.organization}</p>
-                    <a href={certification.link}>View Certification</a>
+                    <a href={certification.link} className="card-link">View Certification</a>
                 </div>
             ))}
             </div>
         </div>
+        <Footer />
         </div>
     )
     }

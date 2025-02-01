@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header';
+import'./index.css'
 
 const Project = () =>{
     const myProjects = [
@@ -43,18 +44,18 @@ const Project = () =>{
         <div>
             <Header/>
             <div className="project-container">
-                <h2>Projects</h2>
-                <p>These are some of the projects I have worked on:</p>
+                <h2 className='header-title'>Projects</h2>
+                <p className='header-desc'>These are some of the projects I have worked on:</p>
 
-                <div className="row">
+                <div className="project-grid">
                     {myProjects.map((myProjects) =>
                     <div key={myProjects.id} className="project-card">
                         <div className='project-image' style={{backgroundImage: `url(${myProjects.image})`}}></div>
                         <div className="project-details">
-                            <h3>{myProjects.name}</h3>
-                            <p>{myProjects.description}</p>
-                            <p><strong>Technologies:</strong> {myProjects.technologies}</p>
-                            <a href={myProjects.link} target="_blank" rel="noreferrer">View Project</a>
+                            <h3 className='project-title'>{myProjects.name}</h3>
+                            <p className='project-desc'>{myProjects.description}</p>
+                            <p className='technologies'><strong>Technologies:</strong> {myProjects.technologies}</p>
+                            <a href={myProjects.link} target="_blank" rel="noreferrer" className='project-link'>View Project</a>
                             </div>
                     </div>
                     )}
