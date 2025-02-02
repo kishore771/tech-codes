@@ -1,67 +1,77 @@
-.certifications-container{
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(135deg, #f0f8ff, #e6f7ff);
-    background-position: center;
-    height: 100vh;
-    padding: 0 1rem;
-}
-
-.certifications-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+/* General styling */
+.certifications-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .header-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .certification-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
-}
-
-.certification-card{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: #ffffff;
-    align-items: center;
-    max-width: 50% fixed;
-    margin: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card-title{
-    font-size: 20px;
-    font-weight: 700;
-    color: #f20909;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: #333;
     margin-bottom: 10px;
-}
-
-
-.card-details{
-    font-size: 20px;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.header-title{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #efb906;
-    text-shadow: 1px 1px 0px #000000;
-    margin-bottom: 10px;
-}
-
-.card-link{
+  }
+  
+  .card-details {
     font-size: 1rem;
-    font-weight: 700;
-    color: #093ff2;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card-link {
+    font-size: 1rem;
+    color: #007bff;
     text-decoration: none;
-    margin-bottom: 10px;
-}
+    font-weight: bold;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Styling */
+  @media (max-width: 600px) {
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .certification-card {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .card-details {
+      font-size: 0.9rem;
+    }
+  
+    .card-link {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,52 +1,81 @@
+/* General styling */
 .home-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url("https://i.postimg.cc/bw2Fw1Lc/abstract-bluish-paint-background-wallpaper-53876-102504.avif");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
 }
 
 .home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-around;
-  padding-right: 20px;
+  margin-bottom: 20px;
 }
 
-.image-container {
-  width: 520px; /* Container width */
-  height: 550px;
-  border-radius: 50%; /* Makes the container circular */
-  overflow: hidden; /* Ensures the image is clipped to the circular container */
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center image inside the container */
-}
-
-/* Profile image styling (circle form) */
-.profile-image {
-  width: 100%; /* Make the image cover the container */
-  height: 100%; /* Make the image cover the container */
-  object-fit: cover; /* Ensures the image fits the container without distortion */
-}
 .name-heading {
-  font-family: Helvetica, sans-serif; 
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ff6600;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .description {
-  font-size: 22px;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  text-align: start;
-  text-shadow: 3px 3px 6px rgba(1, 1, 1, 0.6);
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Profile Image */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  font-size: 1em;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .name-heading {
+    font-size: 2em;
+  }
+
+  .description {
+    font-size: 1.1em;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .name-heading {
+    font-size: 1.8em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
 }

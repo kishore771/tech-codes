@@ -1,160 +1,72 @@
-/* Navbar Container */
 .header-container {
-    display: flex;
-    justify-content: space-between; /* Space between logo and links */
-    align-items: center;
-    background-image: linear-gradient(to right, #050505, #516351 ); /* Dark background */
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Logo Section */
-  .navbar-logo {
-    display: flex;
-    align-items: center; /* Center-align the logo and text */
-    flex: 1; /* Allow space for the logo */
-  }
-  
-  .navbar-logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    gap: 10px; /* Add space between icon and text */
-  }
-  
-  .logo-icon {
-    font-size: 2rem; /* Adjust size of the logo icon */
-    color: #ffffff; /* Highlight color for the icon */
-  }
-  
-  .logo-text {
-    color: white;
-  }
-  
-  /* Navigation Links Section */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  font-size: 15px;
+  background-image: linear-gradient(to right, #33e079c0,#c00707 );
+  color: #fffff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-icon {
+  margin-right: 10px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .navbar-links {
-    display: flex;
-    gap: 20px; /* Space between links */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
   }
-  
+
+  .navbar-links.active {
+    display: flex;
+  }
+
   .navbar-link {
-    display: flex;
-    align-items: center; /* Align icon and text vertically */
-    gap: 8px; /* Space between icon and text */
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .navbar-link:hover {
-    color: #fe3f49; /* Highlight color on hover */
-    transform: scale(1.1);
-    text-shadow: 0 0 10px #ef3699, 0 0 20px #162e41, 0 0 30px #f5bd6a;
-  }
-  
-  /* Icon Styling */
-  .icon {
-    font-size: 1.2rem; /* Adjust icon size */
+    margin: 10px 0;
   }
 
-@media screen and (max-width: 768px) {
-    .navbar-links {
-      display: none; /* Hide the links */
-    }
-  
-    .navbar-logo {
-      flex: 0; /* Remove space for the logo */
-    }
-  
-    .navbar-logo-link {
-      font-size: 1rem; /* Adjust font size */
-    }
-  
-    .navbar-logo-link .logo-icon {
-      font-size: 1.5rem; /* Adjust icon size */
-    }
-  
-    .navbar-logo-link .logo-text {
-      display: none; /* Hide the text */
-    }
-  
-    .navbar-container {
-      justify-content: space-between; /* Space between logo and menu icon */
-    }
-  
-    .menu-icon {
-      font-size: 1.5rem; /* Adjust icon size */
-      color: white; /* Icon color */
-      cursor: pointer; /* Show pointer on hover */
-    }
-  
-    .menu-icon:hover {
-      color: #fe3f49; /* Highlight color on hover */
-    }
-
-    .navbar-links.active {
-      display: flex; /* Show the links */
-      flex-direction: column; /* Stack the links vertically */
-      position: absolute; /* Position the links absolutely */
-      top: 60px; /* Distance from the top */
-      left: 0;
-      right: 0;
-      background-color: #252020; /* Dark background */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
-    }
-
-    .navbar-link {
-      padding: 10px 20px; /* Adjust padding */
-      text-align: center; /* Center-align the text */
-    }
-
-    .navbar-link:hover {
-      color: #fe3f49; /* Highlight color on hover */
-      transform: none; /* Remove scaling effect */
-      text-shadow: none; /* Remove text shadow */
-    }
-
-    .icon {
-      font-size: 1.5rem; /* Adjust icon size */
-    }
-
-    .navbar-link.active {
-      background-color: #fe3f49; /* Highlight active link */
-    }
-
-    .navbar-link.active:hover {
-      color: white; /* Change text color on hover */
-    }
-
-    .menu-icon.active {
-      color: #fe3f49; /* Highlight active icon */
-    }
-
-    .navbar-links.active {
-      display: flex; /* Show the links */
-    }
-
-    .navbar-container {
-      justify-content: space-between; /* Space between logo and menu icon */
-    }
-
-    .menu-icon {
-      font-size: 1.5rem; /* Adjust icon size */
-      color: white; /* Icon color */
-      cursor: pointer; /* Show pointer on hover */
-    }
-
-    .menu-icon:hover {
-      color: #fe3f49; /* Highlight color on hover */
-    }
-    
+  .hamburger-icon {
+    display: block;
+  }
 }

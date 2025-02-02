@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
     FaLaptopCode,
@@ -6,34 +6,48 @@ import {
     FaInfoCircle,
     FaEnvelope,
     FaCertificate,
-  } from 'react-icons/fa';
+    FaBars,
+    FaTimes
+} from 'react-icons/fa';
 import './index.css';
 
 const Header = () => {
-    return (
-        <div className="header-container">
-             <div className="logo-container">
-            <Link to="/" className="navbar-logo-link">
-            <FaLaptopCode className="logo-icon" /> {/* Icon representing your portfolio */}
-            <span className="logo-text">MyPortfolio</span> {/* Optional text beside icon */}
-            </Link>
-            </div>
-            <div className="navbar-links">
-            <Link to="/projects" className="navbar-link">
-            <FaProjectDiagram className="icon" /> Projects
-            </Link>
-            <Link to="/about" className="navbar-link">
-              <FaInfoCircle className="icon" /> About
-            </Link>
-            <Link to="/MyCertifications" className="navbar-link">
-             <FaCertificate className="icon" /> Certifications
-            </Link>
-            <Link to="/contact" className="navbar-link">
-             <FaEnvelope className="icon" /> Contact
-             </Link>
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <div className="header-container">
+      {/* Logo */}
+      <div className="logo-container">
+        <Link to="/" className="navbar-logo-link">
+          <FaLaptopCode className="logo-icon" />
+          <span className="logo-text">MyPortfolio</span>
+        </Link>
       </div>
-        </div>
-    );
+
+      {/* Navbar Links */}
+      <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
+        <Link to="/projects" className="navbar-link">
+          <FaProjectDiagram className="icon" /> Projects
+        </Link>
+        <Link to="/about" className="navbar-link">
+          <FaInfoCircle className="icon" /> About
+        </Link>
+        <Link to="/MyCertifications" className="navbar-link">
+          <FaCertificate className="icon" /> Certifications
+        </Link>
+        <Link to="/contact" className="navbar-link">
+          <FaEnvelope className="icon" /> Contact
+        </Link>
+      </div>
+
+      {/* Hamburger Icon */}
+      <div className="hamburger-icon" onClick={toggleMenu}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+    </div>
+  );
 }
 
 export default Header;
