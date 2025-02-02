@@ -7,10 +7,10 @@ const Project = () =>{
     const myProjects = [
         {
             id: 1,
-            name: "Project 1",
-            description: "This is a project I worked on",
-            technologies: "HTML, CSS, JavaScript, React.js",
-            image: "https://via.placeholder.com/150",
+            name: "Movie Blogger",
+            description: "This is a page where a user can share his Movie experiences",
+            technologies: "React.js",
+            image: "https://i.postimg.cc/Hs80WXhx/DALL-E-2025-02-02-12-35-39-A-modern-and-stylish-logo-for-a-Movie-Blogger-web-application-The-de.webp",
             link: "https://www.google.com"
         },
         {
