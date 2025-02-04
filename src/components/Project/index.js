@@ -15,11 +15,11 @@ const Project = () =>{
         },
         {
             id: 2,
-            name: "Project 1",
-            description: "This is a project I worked on",
-            technologies: "HTML, CSS, JavaScript, React.js",
-            image: "https://via.placeholder.com/150",
-            link: "https://www.google.com"
+            name: "Todo Application",
+            description: "This is an application where You can save your To-Do's",
+            technologies: "HTML, CSS,React.js",
+            image: "https://i.postimg.cc/W10sd13b/istockphoto-1746104990-612x612-1.jpg",
+            link: "https://todo-application-rose.vercel.app/"
         },
         {
             id: 3,
