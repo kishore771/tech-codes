@@ -12,30 +12,6 @@ const Project = () =>{
             technologies: "React.js",
             image: "https://i.postimg.cc/Hs80WXhx/DALL-E-2025-02-02-12-35-39-A-modern-and-stylish-logo-for-a-Movie-Blogger-web-application-The-de.webp",
             link: "https://movie-blogger.vercel.app/"
-        },
-        {
-            id: 2,
-            name: "Todo Application",
-            description: "This is an application where You can save your To-Do's",
-            technologies: "HTML, CSS,React.js",
-            image: "https://i.postimg.cc/W10sd13b/istockphoto-1746104990-612x612-1.jpg",
-            link: "https://todo-application-rose.vercel.app/"
-        },
-        {
-            id: 3,
-            name: "Project 1",
-            description: "This is a project I worked on",
-            technologies: "HTML, CSS, JavaScript, React.js",
-            image: "https://via.placeholder.com/150",
-            link: "https://www.google.com"
-        },
-        {
-            id: 4,
-            name: "Project 1",
-            description: "This is a project I worked on",
-            technologies: "HTML, CSS, JavaScript, React.js",
-            image: "https://via.placeholder.com/150",
-            link: "https://www.google.com"
         }
     ]
 
@@ -51,7 +27,7 @@ const Project = () =>{
                 <div className="project-grid">
                     {myProjects.map((myProjects) =>
                     <div key={myProjects.id} className="project-card">
-                        <div className='project-image' style={{backgroundImage: `url(${myProjects.image})`}}></div>
+                        <div className="project-image" style={{backgroundImage: `url(${myProjects.image})`}}></div>
                         <div className="project-details">
                             <h3 className='project-title'>{myProjects.name}</h3>
                             <p className='project-desc'>{myProjects.description}</p>

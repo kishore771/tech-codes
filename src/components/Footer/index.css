@@ -1,71 +1,67 @@
 /* Footer Styling */
 .footer-container {
-    background-color: #222222; /* Dark background */
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .social-icon {
-    color: white;
-    font-size: 2rem;
-    transition: transform 0.3s, color 0.3s;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2); /* Scale up the icon */
-    color: #4caf50; /* Green color on hover */
-  }
-  
-  .footer-text {
-    font-size: 1rem;
-    color: #aaaaaa;
-    margin-top: 10px;
-  }
-  
-  .footer-text a {
-    color: #4caf50;
-    text-decoration: none;
-  }
-  
-  .footer-text a:hover {
-    text-decoration: underline;
-  }
-  
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+  background-color: #222222; /* Dark background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  z-index: 100;
+  height: 80%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Scale up the icon */
+  color: #4caf50; /* Green color on hover */
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #aaaaaa;
+  margin-top: 5px;
+}
+
+.footer-text a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
-    .social-icons {
-      flex-wrap: wrap;
-    } 
+  .social-icon {
+    font-size: 1.5rem;
+  }
 
-    .social-icon {
-      font-size: 1.5rem;
-    }
+  .footer-text {
+    font-size: 0.8rem;
+  }
 
-    .footer-text {
-      font-size: 0.8rem;
-    }
-
-    .footer-text a {
-      font-size: 0.8rem;
-    }
-
-    .footer-text a:hover {
-      font-size: 0.8rem;
-    }
-
-
-  
+  .footer-text a {
+    font-size: 0.8rem;
+  }
 }
