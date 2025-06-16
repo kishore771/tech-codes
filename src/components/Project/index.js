@@ -12,6 +12,22 @@ const Project = () =>{
             technologies: "React.js",
             image: "https://i.postimg.cc/Hs80WXhx/DALL-E-2025-02-02-12-35-39-A-modern-and-stylish-logo-for-a-Movie-Blogger-web-application-The-de.webp",
             link: "https://movie-blogger.vercel.app/"
+        },
+        {
+            id: 2,
+            name: "Jobby App",
+            description: "This is a page where a user can find jobs and apply for them",
+            technologies: ": React JS, JS, CSS, Bootstrap, Routing, REST API Calls, LocalStorage, JWT Token, Authorization, Authentication",
+            image: "https://i.postimg.cc/fT7qqW0p/jobby-app-image.png",
+            link: "https://jobbylee.ccbp.tech/login"
+        },
+         {
+            id: 3,
+            name: "Food Munch",
+            description: "This is a fully responsive website that offers a comprehensive list of food items and detailed information about each item.",
+            technologies: ":HTML, CSS, Bootstrap",
+            image: "https://i.postimg.cc/kMNY5XXs/food-munch-img.png",
+            link: "https://foodmenu756.ccbp.tech/"
         }
     ]
 
