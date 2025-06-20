@@ -27,7 +27,7 @@ const Project = () =>{
             description: "This is a fully responsive website that offers a comprehensive list of food items and detailed information about each item.",
             technologies: ":HTML, CSS, Bootstrap",
             image: "https://i.postimg.cc/kMNY5XXs/food-munch-img.png",
-            link: "https://foodmenu756.ccbp.tech/"
+            link: "https://food-munch-xi.vercel.app/"
         }
     ]
 
