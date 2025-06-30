@@ -29,6 +29,12 @@ const MyCertifications = () => {
       organization: "Deloitte",
       link: "https://drive.google.com/file/d/1siOpsXf0AjJtlxHqH0rukVHH0quCA9l7/view?usp=drive_link",
     },
+    {
+      id: 4,
+      name: "Deloitte Data Analyst Job Simulation",
+      organization: "Deloitte",
+      link: "https://drive.google.com/file/d/1C9H6gwfya67LdEWV-86Ebn9OOrISW_dr/view?usp=drive_link",
+    },
   ];
 
   return (
