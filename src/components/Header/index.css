@@ -3,16 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  font-size: 15px;
-  background-image: linear-gradient(to right, #33e079c0,#c00707 );
+  font-size: 18px;
+  background-color: rgb(108, 171, 227);
   color: #fff;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 18px;
 }
+
+.logo-text {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
 
 .navbar-logo-link {
   display: flex;
@@ -23,6 +30,8 @@
 
 .logo-icon {
   margin-right: 10px;
+  width: 35px;
+  height: 35px;
 }
 
 .navbar-links {

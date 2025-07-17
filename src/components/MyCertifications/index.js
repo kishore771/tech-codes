@@ -40,9 +40,9 @@ const MyCertifications = () => {
   return (
     <div className="page-wrapper">
       <Header />
-      <main className="certifications-container">
+      <main className="certifications-container container">
         <h1 className="header-title">My Certifications</h1>
-        <div className="certifications-list">
+        <div className="certifications-list col col-md-4 col-sm-6 col-xs-12 col-lg-3 col-xl-3">
           {certifications.map((certification) => (
             <div key={certification.id} className="certification-card">
               <h3 className="card-title">{certification.name}</h3>

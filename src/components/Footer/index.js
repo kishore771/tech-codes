@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa"; /
 import "./index.css"
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <footer className="footer-container fixed-bottom">
       <div className="footer-content">
         <div className="social-icons">
           <a href="https://github.com/kishore771/new.git" target="_blank" rel="noopener noreferrer" className="social-icon">

@@ -22,7 +22,7 @@ const Header = () => {
       <div className="logo-container">
         <Link to="/" className="navbar-logo-link">
           <FaLaptopCode className="logo-icon" />
-          <span className="logo-text">MyPortfolio</span>
+          <span className="logo-text">My Portfolio</span>
         </Link>
       </div>
 

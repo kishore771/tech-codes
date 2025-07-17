@@ -8,8 +8,7 @@
   padding: 20px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  z-index: 100;
-  height: 80%;
+  height: 100%;
 }
 
 .footer-content {
@@ -33,7 +32,7 @@
 
 .social-icon:hover {
   transform: scale(1.2); /* Scale up the icon */
-  color: #4caf50; /* Green color on hover */
+  color: #127c99; /* Green color on hover */
 }
 
 .footer-text {

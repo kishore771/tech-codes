@@ -12,7 +12,7 @@ const Home = () => {
        <h1 className='name-heading'>Hi! I'm Kishore gundelli</h1>
        <div>
       <div className="image-container">
-        <img src="https://i.postimg.cc/d0vKsY9n/1713697455180.jpg" alt="profile" className='profile-image'/>
+        <img src="https://i.postimg.cc/28GVV1dM/1713697455180-1.jpg" alt="profile" className='profile-image'/>
         </div>
         </div>
          <p className='description'>

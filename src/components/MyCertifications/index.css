@@ -23,8 +23,8 @@
 
 .certifications-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px 20px; /* Gap between cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  gap: 40px 50px; /* Gap between cards */
   justify-items: center;
 }
 
