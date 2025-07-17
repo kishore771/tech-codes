@@ -26,8 +26,8 @@ const Project = () =>{
             name: "Food Munch",
             description: "This is a fully responsive website that offers a comprehensive list of food items and detailed information about each item.",
             technologies: ":HTML, CSS, Bootstrap",
-            image: "https://i.postimg.cc/kMNY5XXs/food-munch-img.png",
-            link: "https://food-munch-xi.vercel.app/"
+            image: "https://i.postimg.cc/fbSr9bmC/logo-png.png",
+            link: "https://foodie-stop-xi.vercel.app/"
         }
     ]
 
