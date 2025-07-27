@@ -4,20 +4,23 @@
   align-items: center;
   padding: 20px 20px;
   font-size: 18px;
-  background-color: rgb(108, 171, 227);
+  background-color: rgb(255, 255, 255);
   color: #fff;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
+  
 }
 
 .logo-text {
   margin-left: 10px;
   font-weight: 600;
   font-size: 22px;
+  color: #000;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -30,8 +33,9 @@
 
 .logo-icon {
   margin-right: 10px;
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
+  color: #000;
 }
 
 .navbar-links {
@@ -40,20 +44,23 @@
 }
 
 .navbar-link {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   align-items: center;
-  margin-left: 20px;
-  color: #fff;
+  margin-left: 100px;
+  color: #090909;
   text-decoration: none;
 }
 
 .icon {
   margin-right: 5px;
+  color: #000;
 }
 
 .hamburger-icon {
   display: none;
   cursor: pointer;
+  color: #000;
 }
 
 @media (max-width: 768px) {

@@ -23,10 +23,10 @@ const Project = () =>{
         },
          {
             id: 3,
-            name: "Food Munch",
+            name: "Foodie Stop",
             description: "This is a fully responsive website that offers a comprehensive list of food items and detailed information about each item.",
-            technologies: ":HTML, CSS, Bootstrap",
-            image: "https://i.postimg.cc/fbSr9bmC/logo-png.png",
+            technologies: ":HTML, CSS, Bootstrap, React JS, React Router, React Icons, React Bootstrap",
+            image: "https://i.postimg.cc/Zn5nwXTf/logo-transparent-png.png",
             link: "https://foodie-stop-xi.vercel.app/"
         }
     ]
@@ -43,7 +43,7 @@ const Project = () =>{
                 <div className="project-grid">
                     {myProjects.map((myProjects) =>
                     <div key={myProjects.id} className="project-card">
-                        <div className="project-image" style={{backgroundImage: `url(${myProjects.image})`}}></div>
+                        <img src={myProjects.image} alt={myProjects.name} className='project-image'/>
                         <div className="project-details">
                             <h3 className='project-title'>{myProjects.name}</h3>
                             <p className='project-desc'>{myProjects.description}</p>

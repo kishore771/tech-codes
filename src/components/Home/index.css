@@ -1,14 +1,12 @@
 /* General styling */
 .home-container {
-  font-family: Arial, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #333;
+  background-color: #f3f1f1;
   text-align: center;
   padding: 20px;
 }
 
-.home-content {
-  margin-bottom: 20px;
-}
 
 .name-heading {
   font-size: 2.5em;
