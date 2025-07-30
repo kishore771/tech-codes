@@ -22,7 +22,7 @@
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 60px;
+    gap: 50px;
   }
   
   .project-card {
@@ -32,7 +32,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 110%;
+    width: 100%;
     animation: fadeInDown 0.5s ease-in-out;
   }
   
