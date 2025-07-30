@@ -28,6 +28,14 @@ const Project = () =>{
             technologies: ":HTML, CSS, Bootstrap, React JS, React Router, React Icons, React Bootstrap",
             image: "https://i.postimg.cc/Zn5nwXTf/logo-transparent-png.png",
             link: "https://foodie-stop-xi.vercel.app/"
+        },
+        {
+            id: 4,
+            name: "Weather App",
+            description: "A responsive React weather app showing real-time data with animated icons and search functionality using OpenWeatherMap API.",
+            technologies: ":React, Axios, Bootstrap, Lottie, OpenWeatherMap API, HTML, CSS",
+            image: "https://i.postimg.cc/6pptWgNY/weather.png",
+            link: "https://weather-app-omega-eight-26.vercel.app/"
         }
     ]
 
