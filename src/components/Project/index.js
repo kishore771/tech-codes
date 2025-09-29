@@ -36,7 +36,16 @@ const Project = () =>{
             technologies: ":React, Axios, Bootstrap, Lottie, OpenWeatherMap API, HTML, CSS",
             image: "https://i.postimg.cc/6pptWgNY/weather.png",
             link: "https://weather-app-omega-eight-26.vercel.app/"
+        },
+        {
+            id: 5,
+            name: "Guessing Game",
+            description: "A responsive React Guessing Game app using React.Js",
+            technologies: ":React, HTML, CSS",
+            image: "https://i.postimg.cc/13QKXs1c/10374941-4462136.jpg",
+            link: "https://guessing-game-rouge-three.vercel.app//"
         }
+
     ]
 
 
